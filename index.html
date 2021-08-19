@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Tailwind CSS-->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      button:hover {
+        background-color: rgba(192, 189, 189, 0.548);
+      }
+    </style>
+  </head>
+
+  <body class="h-screen grid place-items-center bg-gray-600">
+    <section class="w-4/5 lg:w-1/5">
+      <div
+        class="
+          grid grid-cols-4
+          font-semibold
+          border-2 border-gray-400
+          shadow-2xl
+          rounded-2xl
+        "
+      >
+        <div
+          class="
+            p-10
+            border border-gray-200
+            bg-gray-800
+            col-span-4
+            rounded-t-2xl
+          "
+        >
+          <h2
+            id="output-field"
+            class="text-right text-white text-2xl break-words"
+          ></h2>
+        </div>
+        <button
+          id="all-clear-btn"
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            col-span-2
+            font-semibold
+            text-2xl
+          "
+        >
+          AC
+        </button>
+        <button
+          id="del-btn"
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+          "
+        >
+          DEL
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          /
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          1
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          2
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          3
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          *
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          4
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          5
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          6
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          +
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          7
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          8
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          9
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          -
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            rounded-bl-2xl
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          .
+        </button>
+
+        <button
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            font-semibold
+            text-2xl
+            input-value
+          "
+        >
+          0
+        </button>
+
+        <button
+          id="result-btn"
+          class="
+            p-3
+            border border-gray-200
+            bg-white
+            text-center
+            col-span-2
+            rounded-br-2xl
+            font-semibold
+            text-2xl
+          "
+        >
+          =
+        </button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
